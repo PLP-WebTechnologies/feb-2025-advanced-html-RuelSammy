@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My HTML Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    table, th, td {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+    table {
+      margin-bottom: 30px;
+    }
+    form {
+      max-width: 500px;
+    }
+    input, select {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ordered List with Roman numerals -->
+  <h2>My Roman Numeral List</h2>
+  <ol type="I">
+    <li>Wake up</li>
+    <li>Study HTML</li>
+    <li>Practice coding</li>
+    <li>Take a break</li>
+  </ol>
+
+  <!-- External Image from Pexels -->
+  <h2>Beautiful Scenery</h2>
+  <img src="https://images.pexels.com/photos/417173/pexels-photo-417173.jpeg?auto=compress&cs=tinysrgb&w=600" 
+       alt="Nature Scenery from Pexels" width="600" />
+
+  <!-- Table of Contacts -->
+  <h2>Contact List</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Jane Doe</td>
+        <td>123 Maple St</td>
+        <td>555-1234</td>
+        <td>jane@example.com</td>
+      </tr>
+      <tr>
+        <td>John Smith</td>
+        <td>456 Oak Ave</td>
+        <td>555-5678</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Emily Ray</td>
+        <td>789 Pine Rd</td>
+        <td>555-8765</td>
+        <td>emily@example.com</td>
+      </tr>
+      <tr>
+        <td>Mark Lee</td>
+        <td>101 Birch Ln</td>
+        <td>555-4321</td>
+        <td>mark@example.com</td>
+      </tr>
+      <tr>
+        <td>Sarah King</td>
+        <td>222 Cedar Ct</td>
+        <td>555-2468</td>
+        <td>sarah@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="#" method="post">
+    <!-- Name Field -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+    <!-- Email Field -->
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+    <!-- Password Field -->
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter a password" minlength="6" required />
+
+    <!-- Date of Birth Field -->
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required />
+
+    <!-- Dropdown Field -->
+    <label for="country">Select Country:</label>
+    <select id="country" name="country" required>
+      <option value="">-- Select Country --</option>
+      <option value="us">United States</option>
+      <option value="uk">United Kingdom</option>
+      <option value="ng">Nigeria</option>
+      <option value="in">India</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>Gender:</p>
+    <input type="radio" id="male" name="gender" value="male" required />
+    <label for="male">Male</label><br />
+    <input type="radio" id="female" name="gender" value="female" required />
+    <label for="female">Female</label><br />
+    <input type="radio" id="other" name="gender" value="other" required />
+    <label for="other">Other</label><br />
+
+    <!-- Checkboxes -->
+    <p>Interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding" />
+    <label for="coding">Coding</label><br />
+    <input type="checkbox" id="music" name="interests" value="music" />
+    <label for="music">Music</label><br />
+    <input type="checkbox" id="travel" name="interests" value="travel" />
+    <label for="travel">Travel</label><br />
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register" />
+  </form>
+
+</body>
+</html>
